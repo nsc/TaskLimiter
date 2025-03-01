@@ -4,7 +4,7 @@ import os
 @testable import TaskLimiter
 
 
-@Test func example() async throws {
+@Test func testBasicFunction() async throws {
     let limit = TaskLimiter(limitTo: 2)
 
     let count = OSAllocatedUnfairLock(initialState: 0)
